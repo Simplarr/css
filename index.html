@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CSS Library</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 18px;
+            padding: 25px;
+            transition: 0.25s ease;
+            border: 1px solid #334155;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        .description {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .file {
+            background: #0f172a;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-family: monospace;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            color: #38bdf8;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .primary:hover {
+            background: #7dd3fc;
+        }
+
+        .secondary {
+            border: 1px solid #475569;
+            color: white;
+        }
+
+        .secondary:hover {
+            background: #334155;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        code {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎨 My CSS Library</h1>
+
+    <p class="subtitle">
+        Public stylesheets hosted with GitHub Pages
+    </p>
+
+    <div class="grid">
+
+        <!-- STYLESHEET CARD -->
+        <div class="card">
+            <h2>Dark Theme</h2>
+
+            <p class="description">
+                Clean dark UI theme with modern cards, buttons,
+                smooth hover effects and responsive layouts.
+            </p>
+
+            <div class="file">
+                dark-theme.css
+            </div>
+
+            <div class="buttons">
+                <a class="btn primary"
+                   href="https://YOURUSERNAME.github.io/YOURREPO/dark-theme.css"
+                   target="_blank">
+                    Open CSS
+                </a>
+
+                <a class="btn secondary"
+                   href="https://github.com/YOURUSERNAME/YOURREPO/blob/main/dark-theme.css"
+                   target="_blank">
+                    View Source
+                </a>
+            </div>
+        </div>
+
+        <!-- STYLESHEET CARD -->
+        <div class="card">
+            <h2>Glassmorphism UI</h2>
+
+            <p class="description">
+                Frosted glass inspired stylesheet perfect for dashboards,
+                overlays and futuristic web apps.
+            </p>
+
+            <div class="file">
+                glass-ui.css
+            </div>
+
+            <div class="buttons">
+                <a class="btn primary"
+                   href="https://YOURUSERNAME.github.io/YOURREPO/glass-ui.css"
+                   target="_blank">
+                    Open CSS
+                </a>
+
+                <a class="btn secondary"
+                   href="https://github.com/YOURUSERNAME/YOURREPO/blob/main/glass-ui.css"
+                   target="_blank">
+                    View Source
+                </a>
+            </div>
+        </div>
+
+        <!-- STYLESHEET CARD -->
+        <div class="card">
+            <h2>Retro Neon</h2>
+
+            <p class="description">
+                Bright neon cyberpunk inspired stylesheet with glowing
+                accents and synthwave vibes.
+            </p>
+
+            <div class="file">
+                retro-neon.css
+            </div>
+
+            <div class="buttons">
+                <a class="btn primary"
+                   href="https://YOURUSERNAME.github.io/YOURREPO/retro-neon.css"
+                   target="_blank">
+                    Open CSS
+                </a>
+
+                <a class="btn secondary"
+                   href="https://github.com/YOURUSERNAME/YOURREPO/blob/main/retro-neon.css"
+                   target="_blank">
+                    View Source
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Hosted with GitHub Pages
+    </footer>
+
+</div>
+
+</body>
+</html>
